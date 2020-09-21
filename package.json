@@ -21,7 +21,9 @@
     "eslint": "^7.9.0",
     "jest": "^26.4.2",
     "metro-react-native-babel-preset": "^0.63.0",
-    "react-test-renderer": "16.13.1"
+    "react-test-renderer": "16.13.1",
+    "expo-dev-menu": "file:../expo/packages/expo-dev-menu",
+    "expo-dev-menu-interface": "file:../expo/packages/expo-dev-menu-interface"
   },
   "jest": {
     "preset": "react-native"

@@ -13,6 +13,9 @@ target 'devMenuDemo' do
     # Pods for testing
   end
 
+  pod 'EXDevMenuInterface', path: '../../expo/packages/expo-dev-menu-interface'
+  pod 'EXDevMenu', path: '../../expo/packages/expo-dev-menu', :configurations => :debug
+
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and

@@ -2792,6 +2792,12 @@ expect@^26.4.2:
     jest-message-util "^26.3.0"
     jest-regex-util "^26.0.0"
 
+"expo-dev-menu-interface@file:../expo/packages/expo-dev-menu-interface":
+  version "0.0.1"
+
+"expo-dev-menu@file:../expo/packages/expo-dev-menu":
+  version "0.0.1"
+
 extend-shallow@^1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-1.1.4.tgz#19d6bf94dfc09d76ba711f39b872d21ff4dd9071"

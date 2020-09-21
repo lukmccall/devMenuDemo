@@ -1,3 +1,10 @@
 rootProject.name = 'devMenuDemo'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+
+include(":expo-dev-menu")
+project(":expo-dev-menu").projectDir = new File("../../expo/packages/expo-dev-menu/android")
+
+include(":expo-dev-menu-interface")
+project(":expo-dev-menu-interface").projectDir = new File("../../expo/packages/expo-dev-menu-interface/android")
+
 include ':app'
