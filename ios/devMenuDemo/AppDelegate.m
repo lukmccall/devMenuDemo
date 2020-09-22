@@ -4,7 +4,9 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+#if __has_include(<EXDevMenu/EXDevMenu-umbrella.h>)
 @import EXDevMenu;
+#endif
 
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>

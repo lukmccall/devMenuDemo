@@ -19,6 +19,8 @@
 		6ED09E9ED6712BAC9A02B205 /* libPods-devMenuDemo-devMenuDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFF18D847ADBDA7C0892EAF /* libPods-devMenuDemo-devMenuDemoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9DBD576DEA5C6ED3560DF28D /* libPods-devMenuDemo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CC2CB1A3923BC7C26AFE91 /* libPods-devMenuDemo-tvOSTests.a */; };
+		B2B8D8F7251A100100EC404C /* CustomDevMenuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8D8F6251A100100EC404C /* CustomDevMenuExtension.swift */; };
+		B2B8D92F251A122D00EC404C /* CustomDevMenuExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8D92E251A122D00EC404C /* CustomDevMenuExtension.m */; };
 		F1428DA8C28A23F7320A7079 /* libPods-devMenuDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2309B1EB54356AF382EF10B /* libPods-devMenuDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,9 @@
 		85E635B47BE9E76D92BB68AB /* Pods-devMenuDemo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devMenuDemo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-devMenuDemo-tvOS/Pods-devMenuDemo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9BB19F87400F2E98036E5881 /* libPods-devMenuDemo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-devMenuDemo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46D3675582A067CAD34BE09 /* Pods-devMenuDemo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devMenuDemo-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-devMenuDemo-tvOSTests/Pods-devMenuDemo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2B8D8F5251A100000EC404C /* devMenuDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "devMenuDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B2B8D8F6251A100100EC404C /* CustomDevMenuExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomDevMenuExtension.swift; path = devMenuDemo/CustomDevMenuExtension.swift; sourceTree = "<group>"; };
+		B2B8D92E251A122D00EC404C /* CustomDevMenuExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomDevMenuExtension.m; path = devMenuDemo/CustomDevMenuExtension.m; sourceTree = "<group>"; };
 		D2309B1EB54356AF382EF10B /* libPods-devMenuDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-devMenuDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CC2CB1A3923BC7C26AFE91 /* libPods-devMenuDemo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-devMenuDemo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08C3C8A770ED3BE62C5A13F /* Pods-devMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devMenuDemo.debug.xcconfig"; path = "Target Support Files/Pods-devMenuDemo/Pods-devMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				B2B8D92E251A122D00EC404C /* CustomDevMenuExtension.m */,
+				B2B8D8F6251A100100EC404C /* CustomDevMenuExtension.swift */,
+				B2B8D8F5251A100000EC404C /* devMenuDemo-Bridging-Header.h */,
 			);
 			name = devMenuDemo;
 			sourceTree = "<group>";
@@ -148,7 +156,6 @@
 				A46D3675582A067CAD34BE09 /* Pods-devMenuDemo-tvOSTests.debug.xcconfig */,
 				5F1F28BEC898376232938AD5 /* Pods-devMenuDemo-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,7 +301,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1200;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -574,6 +581,8 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B2B8D8F7251A100100EC404C /* CustomDevMenuExtension.swift in Sources */,
+				B2B8D92F251A122D00EC404C /* CustomDevMenuExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EABAA3C86DB281C23567239 /* Pods-devMenuDemo-devMenuDemoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -637,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3585E5CC2EEAEF88274FAD69 /* Pods-devMenuDemo-devMenuDemoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = devMenuDemoTests/Info.plist;
@@ -670,6 +681,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = devMenuDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "devMenuDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -692,6 +704,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = devMenuDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "devMenuDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
